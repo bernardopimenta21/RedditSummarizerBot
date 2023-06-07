@@ -88,7 +88,7 @@ target/
 # Mypy cache
 .mypy_cache/
 
-conf/local/**
-!conf/local/.gitkeep
+# conf/local/**
+# !conf/local/.gitkeep
 !.gitkeep
 processed_posts.txt
