@@ -47,7 +47,8 @@ def scraper_html(url: str) -> Tuple[str, str]:
         "rr": "slab-400",
         "rr_lead": "rr-lead",
         "jornalnegocios": "texto paywall",
-        "sapo_24": "content",
+        "sapo_24": "content",        
+        "tsf_lead": "t-ah-desc",
     }
     # Exclude classes that are in the article but are not relevant to article body
     excluding_classes = [
@@ -56,6 +57,14 @@ def scraper_html(url: str) -> Tuple[str, str]:
         "article--footer",
         "relatedLink",
         "related-article",
+        "t-a-subscribe-1 js-contentcollapse-root",
+        "t-grp-title-5",
+        "t-a-info-share",
+        "t-abc-footer",
+        "t-a-multimedia-1",
+        "t-a-info-authoring",
+        "t-a-info-share-comment",
+        "t-a-audioplayer-1"
     ]
 
     # Get lead text if it exists
@@ -68,7 +77,7 @@ def scraper_html(url: str) -> Tuple[str, str]:
         pass
 
     # Find and remove the <div class="unwanted_classes"> elements
-    related_link_divs = soup.find_all(["div", "aside"], class_=excluding_classes)
+    related_link_divs = soup.find_all(["div", "aside", "footer"], class_=excluding_classes)
     for div in related_link_divs:
         div.decompose()
 
@@ -79,13 +88,15 @@ def scraper_html(url: str) -> Tuple[str, str]:
     for element in news_elements:
         news_text += element.get_text().strip()
 
-    return title, news_lead + news_text
+    news_body = news_lead + news_text
+
+    return title, news_body
 
 
 if __name__ == "__main__":
     log_fmt = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
     logging.basicConfig(level=logging.INFO, format=log_fmt)
 
-    url = "https://www.jornaldenegocios.pt/empresas/banca---financas/detalhe/decisao-sobre-cartel-da-banca-deve-ser-tomada-no-inicio-de-2024"
+    url = "https://www.tsf.pt/portugal/politica/psd-vai-pedir-ao-ministerio-publico-que-avalie-se-houve-falsas-declaracoes-de-galamba-na-cpi-a-tap-16490844.html"
     title, body = scraper_html(url)
     print(">>> Title: ", title, "\n\n>>> Article Text: ", body)
