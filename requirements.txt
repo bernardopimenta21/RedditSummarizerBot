@@ -1,0 +1,23 @@
+# local package
+-e .
+
+# external requirements
+click
+Sphinx
+coverage
+awscli
+flake8
+black
+isort 
+python-dotenv>=0.5.1
+bs4
+html5lib
+praw
+requests
+transformers
+nltk
+sentencepiece
+pandas
+tldextract
+yake
+numpy

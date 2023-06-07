@@ -1,0 +1,9 @@
+subreddits : ["portugal", "portugueses"]
+
+whitelist: ["sicnoticias.pt", "noticiasaominuto.com", "dn.pt", "cnnportugal.iol.pt", "dinheirovivo.pt", "dnoticias.pt", "rr.sapo.pt", "jornaldenegocios.pt", "24.sapo.pt", "www.jn.pt"]
+
+sentence_transfomer: 'distilbert-base-nli-stsb-mean-tokens' #"ricardo-filho/bert-base-portuguese-cased-nli-assin-2 ", "sentence-transformers_distiluse-base-multilingual-cased-v1"
+
+num_sentences : 3                                         #Number of sentences for extractive summarization
+
+num_posts: 50                                             # Number of posts to scan on each subreddit per run
