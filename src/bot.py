@@ -12,7 +12,7 @@ from src.summarizer import generate_extractive_summary, get_relevant_keywords
 with open("./conf/parameters.yml", "r") as stream:
     PARAMETERS = yaml.safe_load(stream)
 
-with open("./conf/conf.yml", "r") as stream:
+with open("./conf/local/conf.yml", "r") as stream:
     CONF = yaml.safe_load(stream)
 
 TEMPLATE = open("./conf/post_template.txt", "r", encoding="utf-8").read()
