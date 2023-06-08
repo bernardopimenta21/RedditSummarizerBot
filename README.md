@@ -1,9 +1,9 @@
 # Reddit News Summarization Bot
 
-A reddit bot that can retrieve articles from portuguese news outlets to generate an **extractive summary ** and perform **keyword extraction**.
-It leverages **BERT SentenceTransformers** to generate input sequence embeddings and uses cosine similarity to calculate the similarity between sentence embeddings which allows us to identify the most important sentences in the document. This approach allows for an extractive summarization technique where the summary consists of the most relevant and representative sentences from the original text
+A reddit bot that can retrieve articles from portuguese news outlets to generate an **extractive summary** and perform **keyword extraction**.
+It leverages **BERT SentenceTransformers** to generate input sequence embeddings and uses cosine similarity to calculate the similarity between sentence embeddings which allows us to identify the most important sentences in the document. This approach allows for an extractive summarization technique where the summary consists of the most relevant and representative sentences from the original text.
 
-## Overview
+## Overview - Bot execution process
 
 ```mermaid
 graph TD
@@ -28,8 +28,16 @@ graph TD
     R --> F
     R --> S[Finish]
 ```
-
-
+## Sumarization pipeline
+```mermaid
+graph LR
+    A[Start] --> C[Preprocess Text]
+    C --> D[Generate Sentence Embeddings]
+    D --> E[Calculate Similarity Scores]
+    E --> F[Extract Top Sentences]
+    F --> G[Generate Extractive Summary]
+    G --> I[Finish]
+```
 ## Usage
 
 To use the Summarization Bot, follow these steps:
