@@ -31,13 +31,18 @@ graph TD
 ## Sumarization pipeline
 ```mermaid
 graph LR
-    A[Start] --> C[Preprocess Text]
+    C[Preprocess Text]
     C --> D[Generate Sentence Embeddings]
     D --> E[Calculate Similarity Scores]
     E --> F[Extract Top Sentences]
     F --> G[Generate Extractive Summary]
-    G --> I[Finish]
+    G 
 ```
+- **Preprocessing**: Removing any unwanted words or phrases that the scraper may have retrieved in the article text and tokenize the text in sentences.
+- **Generate Sentence Embeddings**: Pass the sentences through a sentence transformer model to generate the embeddings.
+- **Calculate Similarity Scores**: Perform the similarity score calculation between sentence embeddings pairs using cosine similarity
+- **Extract Top Sentences**: Calculate importance scores based on similarity matrix and select top sentences for the summary
+- **Generate Extractive Summary**: Concatenate top summary sentences from previous node to create the summary.
 ## Usage
 
 To use the Summarization Bot, follow these steps:
