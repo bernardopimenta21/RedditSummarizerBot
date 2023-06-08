@@ -93,3 +93,6 @@ Alternatively it is possible to run each module individually, to perform summari
 python scraper.py
 python summarization.py
 ```
+
+### Reddit Profile: 
+https://www.reddit.com/user/SumarizadorNoticias
