@@ -68,7 +68,6 @@ REDDIT_PASSWORD : ""
 APP_ID : ""
 APP_SECRET : ""
 USER_AGENT : ""
-SUBREDDITS : [""]
 ```
 Edit the file conf/**parameters.yml**:
 ```yaml
