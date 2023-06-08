@@ -35,7 +35,7 @@ graph TD
     R --> S[Finish]
 ```
 ## Sumarization pipeline
-The steps of the summarization pipeline are here represented sequentially. The pipeline starts with text preprocessing to remove unwanted words and tokenize the article text into sentences. Next, sentence embeddings are generated using a Sentence-BERT model. The similarity scores between between sentence embeddings pairs are calculated using cosine similarity. Based on the similarity scores, the top sentences are extracted. Finally, these top sentences are combined to generate the extractive summary.
+The steps of the summarization pipeline represented by the **Generate Summary** block in the previous diagram are here represented sequentially in finer detail. The pipeline starts with text preprocessing to remove unwanted words and tokenize the article text into sentences. Next, sentence embeddings are generated using a Sentence-BERT model. The similarity scores between between sentence embeddings pairs are calculated using cosine similarity. Based on the similarity scores, the top sentences are extracted. Finally, these top sentences are combined to generate the extractive summary.
 ```mermaid
 graph LR
     C[Preprocess Text]
