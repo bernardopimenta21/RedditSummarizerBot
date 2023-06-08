@@ -2,7 +2,7 @@
 
 A reddit bot that can retrieve articles from portuguese news outlets to generate an **extractive summary** and perform **keyword extraction**.
 The Summarization Pipeline is a process that automates the extraction of summaries from news articles and the generation of relevant keywords. It utilizes natural language processing techniques to analyze the content of articles and provide concise summaries that capture the essential information.
-It leverages **BERT SentenceTransformers** to generate input sequence embeddings and uses cosine similarity to calculate the similarity between sentence embeddings which allows us to identify the most important sentences in the document. This approach allows for an extractive summarization technique where the summary consists of the most relevant and representative sentences from the original text.
+It leverages **BERT SentenceTransformers** to generate input sequence embeddings and uses cosine similarity to calculate the similarity between sentence embeddings which allows us to identify the most important sentences in the article's text. This approach allows for an extractive summarization technique where the summary consists of the most relevant and representative sentences from the original text.
 
 ## Overview 
 
