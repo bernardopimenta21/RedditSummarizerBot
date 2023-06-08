@@ -36,7 +36,8 @@ REDDIT_PASSWORD : ""
 APP_ID : ""
 APP_SECRET : ""
 USER_AGENT : ""
-SUBREDDITS : [""]````
+SUBREDDITS : [""]
+```
 Edit the file conf/**parameters.yml** where:
 - subreddits: is a list of subreddits to search for articles
 - whitelist: is the list of whitelisted news websites
