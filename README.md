@@ -67,7 +67,16 @@ APP_SECRET : ""
 USER_AGENT : ""
 SUBREDDITS : [""]
 ```
-Edit the file conf/**parameters.yml** where:
+Edit the file conf/**parameters.yml**:
+```yaml
+subreddits : [""]
+whitelist : [""]
+sentence_transfomer : ""
+num_sentences : 
+num_posts : 
+SUBREDDITS : 
+```
+ where:
 - subreddits: is a list of subreddits to search for articles
 - whitelist: is the list of whitelisted news websites
 - sentence_transfomer: the Hugging face model to use, currently "distilbert-base-nli-stsb-mean-tokens" is employed
