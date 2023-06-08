@@ -6,11 +6,27 @@ It leverages **BERT SentenceTransformers** to generate input sequence embeddings
 ## Overview
 
 ```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+graph TD
+    A[Start] --> B[Load Configuration Files]
+    B --> C[Initialize Summarization Bot]
+    C --> D[Authenticate with Reddit]
+    D --> E[Load Processed Posts Log]
+    E --> F[Retrieve Latest Submissions]
+    F --> G[Check if Submission is Processed]
+    G --> H[Clean URL]
+    H --> I[Extract Domain]
+    I --> J[Check Domain in Whitelist]
+    J --> K[Scrape HTML and Get Article Text]
+    K --> L[Generate Summary]
+    L --> M[Extract Relevant Keywords]
+    M --> N[Prepare Post Message]
+    N --> O[Submit Comment on Reddit]
+    O --> P[Update Processed Posts Log]
+    P --> Q[Print Success Message]
+    Q --> R[Continue with Next Submission]
+    G --> R[Skip Processed Submission]
+    R --> F
+    R --> S[Finish]
 ```
 
 
