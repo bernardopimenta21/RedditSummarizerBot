@@ -1,10 +1,16 @@
 # Reddit News Summarization Bot
 
 A reddit bot that can retrieve articles from portuguese news outlets to generate an **extractive summary** and perform **keyword extraction**.
+The Summarization Pipeline is a process that automates the extraction of summaries from news articles and the generation of relevant keywords. It utilizes natural language processing techniques to analyze the content of articles and provide concise summaries that capture the essential information.
 It leverages **BERT SentenceTransformers** to generate input sequence embeddings and uses cosine similarity to calculate the similarity between sentence embeddings which allows us to identify the most important sentences in the document. This approach allows for an extractive summarization technique where the summary consists of the most relevant and representative sentences from the original text.
 
-## Overview - Bot execution process
+## Overview 
 
+The main execution pipeline consists of several steps, including data retrieval, text preprocessing, feature extraction, and summary generation. 
+
+Additionally, it is designed to integrate with platforms like Reddit, where it can comment on posts with the generated summaries, providing users with condensed versions of news articles and facilitating efficient information consumption.
+
+The flow of execution of the bot is represented below in diagram format, depicting the various stages and their interactions:
 ```mermaid
 graph TD
     A[Start] --> B[Load Configuration Files]
@@ -29,6 +35,7 @@ graph TD
     R --> S[Finish]
 ```
 ## Sumarization pipeline
+The steps of the summarization pipeline are here represented sequentially. The pipeline starts with text preprocessing to remove unwanted words and tokenize the article text into sentences. Next, sentence embeddings are generated using a Sentence-BERT model. The similarity scores between between sentence embeddings pairs are calculated using cosine similarity. Based on the similarity scores, the top sentences are extracted. Finally, these top sentences are combined to generate the extractive summary.
 ```mermaid
 graph LR
     C[Preprocess Text]
@@ -38,11 +45,7 @@ graph LR
     F --> G[Generate Extractive Summary]
     G 
 ```
-- **Preprocessing**: Removing any unwanted words or phrases that the scraper may have retrieved in the article text and tokenize the text in sentences.
-- **Generate Sentence Embeddings**: Pass the sentences through a sentence transformer model to generate the embeddings.
-- **Calculate Similarity Scores**: Perform the similarity score calculation between sentence embeddings pairs using cosine similarity
-- **Extract Top Sentences**: Calculate importance scores based on similarity matrix and select top sentences for the summary
-- **Generate Extractive Summary**: Concatenate top summary sentences from previous node to create the summary.
+
 ## Usage
 
 To use the Summarization Bot, follow these steps:
@@ -72,9 +75,8 @@ Edit the file conf/**parameters.yml**:
 subreddits : [""]
 whitelist : [""]
 sentence_transfomer : ""
-num_sentences : 
-num_posts : 
-SUBREDDITS : 
+num_sentences : ''
+num_posts : ''
 ```
  where:
 - subreddits: is a list of subreddits to search for articles
