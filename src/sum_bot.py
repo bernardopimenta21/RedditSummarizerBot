@@ -39,7 +39,7 @@ def sum_bot_init() -> None:
         username=CONF["REDDIT_USERNAME"],
         password=CONF["REDDIT_PASSWORD"],
     )
-
+    new_post_found = False
     processed_posts = load_log()
     for subreddit in PARAMETERS["subreddits"]:
         for submission in reddit.subreddit(subreddit).new(
@@ -51,6 +51,7 @@ def sum_bot_init() -> None:
                 domain = "{}.{}".format(ext.domain, ext.suffix)
 
                 if domain in PARAMETERS["whitelist"]:
+                    new_post_found = True
                     try:
                         # Scrape html and get article text
                         article_title, article_body = scraper_html(clean_url)
@@ -77,7 +78,7 @@ def sum_bot_init() -> None:
                             top_words,
                             summary,
                         )
-                        logger.info("Submitting comment...")
+                        print("Submitting comment...")
                         reddit.submission(submission.id).reply(post_message)
                         update_log(submission.id)
                         print("Created a reply to post with id: ", submission.id)
@@ -87,6 +88,8 @@ def sum_bot_init() -> None:
                         update_log(submission.id)
                         print("Submission Failed:", submission.id)
                         continue
+        if not new_post_found:
+            print("No new posts to process in /r/{}.".format(subreddit))
 
 
 if __name__ == "__main__":

@@ -47,7 +47,7 @@ def scraper_html(url: str) -> Tuple[str, str]:
         "rr": "slab-400",
         "rr_lead": "rr-lead",
         "jornalnegocios": "texto paywall",
-        "sapo_24": "content",        
+        "sapo_24": "content",
         "tsf_lead": "t-ah-desc",
     }
     # Exclude classes that are in the article but are not relevant to article body
@@ -64,7 +64,7 @@ def scraper_html(url: str) -> Tuple[str, str]:
         "t-a-multimedia-1",
         "t-a-info-authoring",
         "t-a-info-share-comment",
-        "t-a-audioplayer-1"
+        "t-a-audioplayer-1",
     ]
 
     # Get lead text if it exists
@@ -77,7 +77,9 @@ def scraper_html(url: str) -> Tuple[str, str]:
         pass
 
     # Find and remove the <div class="unwanted_classes"> elements
-    related_link_divs = soup.find_all(["div", "aside", "footer"], class_=excluding_classes)
+    related_link_divs = soup.find_all(
+        ["div", "aside", "footer"], class_=excluding_classes
+    )
     for div in related_link_divs:
         div.decompose()
 
