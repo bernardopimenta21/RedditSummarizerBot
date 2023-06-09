@@ -2,10 +2,7 @@
 -e .
 
 # external requirements
-click
-Sphinx
-coverage
-awscli
+
 flake8
 black
 isort 
@@ -17,7 +14,6 @@ requests
 transformers
 nltk
 sentencepiece
-pandas
 tldextract
 yake
 numpy
