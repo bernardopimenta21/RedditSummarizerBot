@@ -1,4 +1,5 @@
 import logging
+import re
 from typing import Tuple
 
 import requests
@@ -65,6 +66,11 @@ def scraper_html(url: str) -> Tuple[str, str]:
         "t-a-info-authoring",
         "t-a-info-share-comment",
         "t-a-audioplayer-1",
+        "t-af-share-2",
+        "t-af-comments-1",
+        "t-af-callout-5 js-contentcollapse-root newslettercapping",
+        "t-af-multimedia-1",
+        "t-af1-c1-sb js-a-content-sb-elm-ref",
     ]
 
     # Get lead text if it exists
@@ -91,7 +97,8 @@ def scraper_html(url: str) -> Tuple[str, str]:
         news_text += element.get_text().strip()
 
     news_body = news_lead + news_text
-
+    # Add space between period and capital letters of next sentence if it doesnt exist
+    news_body = re.sub(r"\.(?=[A-Z\"])", ". ", news_body).strip()
     return title, news_body
 
 
