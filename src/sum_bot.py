@@ -30,7 +30,6 @@ except FileNotFoundError:
     print(
         "No globals.yml file found. Continuing without setting environment variables."
     )
-    pass
 
 
 TEMPLATE = open("./conf/post_template.txt", "r", encoding="utf-8").read()
