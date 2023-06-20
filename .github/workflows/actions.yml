@@ -1,27 +1,26 @@
-name: run sum_bot.py
+name: Run Sum Bot
 
 on:
   schedule:
-    - cron: '*/2 * * * *' # Every 2 mins
+    - cron: "*/1 * * * *"
+  workflow_dispatch:  # Manual trigger option from GitHub UI
 
 jobs:
-  build:
+  run_script:
     runs-on: ubuntu-latest
+
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-      - name: checkout repo content
-        uses: actions/checkout@v2 # checkout the repository content to github runner
-
-      - name: setup python
-        uses: actions/setup-python@v4
+      - name: Set up Python
+        uses: actions/setup-python@v2
         with:
-          python-version: '3.9' # install the python version needed
-          
-      - name: install python packages
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          
+          python-version: 3.x  # Replace with your desired Python version
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt  # Replace with your dependencies if applicable
+
       - name: Set environment variables
         run: |
           echo "APP_ID=${{ secrets.APP_ID }}" >> $GITHUB_ENV
@@ -30,18 +29,5 @@ jobs:
           echo "REDDIT_USERNAME=${{ secrets.REDDIT_USERNAME }}" >> $GITHUB_ENV
           echo "REDDIT_PASSWORD=${{ secrets.REDDIT_PASSWORD }}" >> $GITHUB_ENV
 
-      - name: run py script # run main.py
-        run: python sum_bot.py
-          
-      - name: commit files
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -A
-          git diff-index --quiet HEAD || (git commit -a -m "updated processed_posts logs" --allow-empty)
-          
-      - name: push changes
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main       
+      - name: Run script
+        run: python sum_bot.py  # Replace with your script file name and any command line arguments
