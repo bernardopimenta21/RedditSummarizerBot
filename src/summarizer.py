@@ -8,7 +8,7 @@ import yaml
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
-from src.preprocess import remove_stopwords, remove_unwanted_words
+from preprocess import remove_stopwords, remove_unwanted_words
 
 with open("./conf/parameters.yml", "r") as stream:
     PARAMETERS = yaml.safe_load(stream)
