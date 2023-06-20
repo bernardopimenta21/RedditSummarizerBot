@@ -1,4 +1,5 @@
 import logging
+import os
 from datetime import datetime
 
 import praw
@@ -9,11 +10,28 @@ from src.logs_helper import load_log, log_error, update_log
 from src.scraper import scraper_html
 from src.summarizer import generate_extractive_summary, get_relevant_keywords
 
+logging.basicConfig(
+    filename="status.log",
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
+)
+
 with open("./conf/parameters.yml", "r") as stream:
     PARAMETERS = yaml.safe_load(stream)
 
-with open("./conf/local/globals.yml", "r") as stream:
-    CONF = yaml.safe_load(stream)
+try:
+    with open("./conf/local/globals.yml", "r") as stream:
+        globals_config = yaml.safe_load(stream)
+    # Set environment variables from the globals_config dictionary
+    for key, value in globals_config.items():
+        os.environ[key] = value
+except FileNotFoundError:
+    print(
+        "No globals.yml file found. Continuing without setting environment variables."
+    )
+    pass
+
 
 TEMPLATE = open("./conf/post_template.txt", "r", encoding="utf-8").read()
 
@@ -30,15 +48,18 @@ def sum_bot_init() -> None:
     comment on the posts with the generated summary"""
 
     logger = logging.getLogger(__name__)
-    logger.info("Initializing Sumarization Bot")
+    logger.info(">>> Initializing Sumarization Bot")
+    try:
+        reddit = praw.Reddit(
+            client_id=os.environ["APP_ID"],
+            client_secret=os.environ["APP_SECRET"],
+            user_agent=os.environ["USER_AGENT"],
+            username=os.environ["REDDIT_USERNAME"],
+            password=os.environ["REDDIT_PASSWORD"],
+        )
+    except KeyError:
+        logger.error("Reddit API information is invalid or missing.")
 
-    reddit = praw.Reddit(
-        client_id=CONF["APP_ID"],
-        client_secret=CONF["APP_SECRET"],
-        user_agent=CONF["USER_AGENT"],
-        username=CONF["REDDIT_USERNAME"],
-        password=CONF["REDDIT_PASSWORD"],
-    )
     new_post_found = False
     processed_posts = load_log()
     for subreddit in PARAMETERS["subreddits"]:
@@ -53,17 +74,18 @@ def sum_bot_init() -> None:
                 if domain in PARAMETERS["whitelist"]:
                     new_post_found = True
                     try:
+                        logger.info(
+                            ">> Start summarizer for post with id: {}".format(
+                                submission.id
+                            )
+                        )
                         # Scrape html and get article text
                         article_title, article_body = scraper_html(clean_url)
 
                         # Perform summarization on article text
-                        logger.info("Generating summary...")
-
                         summary = generate_extractive_summary(
                             article_body, PARAMETERS["num_sentences"]
                         )
-
-                        logger.info("Extracting relevant keywords...")
 
                         keywords = get_relevant_keywords(article_body)
 
@@ -78,18 +100,21 @@ def sum_bot_init() -> None:
                             top_words,
                             summary,
                         )
-                        print("Submitting comment...")
                         reddit.submission(submission.id).reply(post_message)
                         update_log(submission.id)
-                        print("Created a reply to post with id: ", submission.id)
+                        logger.info(
+                            ">> Submitted reply to post with id: {}".format(
+                                submission.id
+                            )
+                        )
 
                     except Exception as e:
                         log_error("{},{}".format(clean_url, e))
                         update_log(submission.id)
-                        print("Submission Failed:", submission.id)
+                        logger.error("Submission Failed:", submission.id)
                         continue
         if not new_post_found:
-            print("No new posts to process in /r/{}.".format(subreddit))
+            logger.info("No new posts to process in /r/{}.".format(subreddit))
 
 
 if __name__ == "__main__":
