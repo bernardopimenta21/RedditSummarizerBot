@@ -6,9 +6,9 @@ import praw
 import tldextract
 import yaml
 
-from src.logs_helper import load_log, log_error, update_log
-from src.scraper import scraper_html
-from src.summarizer import generate_extractive_summary, get_relevant_keywords
+from logs_helper import load_log, log_error, update_log
+from scraper import scraper_html
+from summarizer import generate_extractive_summary, get_relevant_keywords
 
 logging.basicConfig(
     filename="status.log",
