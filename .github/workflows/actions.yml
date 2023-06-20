@@ -2,8 +2,7 @@ name: Run Summarization Bot
 
 on:
   schedule:
-    - cron: "*/1 * * * *"
-  workflow_dispatch:  # Manual trigger option from GitHub UI
+    - cron: "0 */2 * * *" #Run every 2 hours
 
 jobs:
   run_script:
