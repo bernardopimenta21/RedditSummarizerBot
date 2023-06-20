@@ -30,8 +30,8 @@ jobs:
           echo "REDDIT_PASSWORD=${{ secrets.REDDIT_PASSWORD }}" >> $GITHUB_ENV
 
       - name: Set working directory
-        run: cd src/
+        run: cd src
 
       - name: Run script
-        run: python sum_bot.py
+        run: python src/sum_bot.py
 
