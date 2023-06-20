@@ -16,10 +16,10 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.x  # Replace with your desired Python version
+          python-version: 3.9  #
 
       - name: Install dependencies
-        run: pip install -r requirements.txt  # Replace with your dependencies if applicable
+        run: pip install -r requirements.txt 
 
       - name: Set environment variables
         run: |
@@ -30,4 +30,4 @@ jobs:
           echo "REDDIT_PASSWORD=${{ secrets.REDDIT_PASSWORD }}" >> $GITHUB_ENV
 
       - name: Run script
-        run: python sum_bot.py  # Replace with your script file name and any command line arguments
+        run: python sum_bot.py  
