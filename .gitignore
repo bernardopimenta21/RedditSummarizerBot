@@ -91,4 +91,3 @@ target/
 conf/local/**
 !conf/local/.gitkeep
 !.gitkeep
-processed_posts.txt
