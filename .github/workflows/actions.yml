@@ -29,18 +29,20 @@ jobs:
           echo "REDDIT_USERNAME=${{ secrets.REDDIT_USERNAME }}" >> $GITHUB_ENV
           echo "REDDIT_PASSWORD=${{ secrets.REDDIT_PASSWORD }}" >> $GITHUB_ENV
 
+          
+      - name: Download NLTK resources
+        run: python -m nltk.downloader punkt
+
       - name: Run script
         run: python src/sum_bot.py
 
-      - name: commit files
+      - name: Commit and push changes
+        env:
+          GIT_COMMITTER_NAME: GitHub Action
+          GIT_COMMITTER_EMAIL: action@github.com
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -A
-          git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
-          
-      - name: push changes
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GH_TOKEN }}
-          branch: main 
+          git config --local user.name "${GIT_COMMITTER_NAME}"
+          git config --local user.email "${GIT_COMMITTER_EMAIL}"
+          git add .
+          git commit -m "Update summaries" --allow-empty
+          git push https://github.com/${{ github.repository }}.git HEAD:${{ github.ref }}
