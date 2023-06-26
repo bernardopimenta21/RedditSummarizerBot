@@ -426,3 +426,11 @@
 2023-06-26 10:13:06 - INFO - Use pytorch device: cpu
 2023-06-26 10:13:06 - INFO - Extracting keywords...
 2023-06-26 10:13:06 - INFO - >> Submitted reply to post with id: 14jbag6
+2023-06-26 12:21:23 - INFO - >>> Initializing Sumarization Bot
+2023-06-26 12:21:24 - INFO - >> Start summarizer for post with id: 14jfre1
+2023-06-26 12:21:24 - INFO - Getting article text from URL
+2023-06-26 12:21:26 - INFO - Generating summary...
+2023-06-26 12:21:26 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-06-26 12:21:29 - INFO - Use pytorch device: cpu
+2023-06-26 12:21:29 - INFO - Extracting keywords...
+2023-06-26 12:21:30 - INFO - >> Submitted reply to post with id: 14jfre1
