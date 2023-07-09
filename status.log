@@ -1331,3 +1331,8 @@
 2023-07-09 01:03:53 - INFO - Use pytorch device: cpu
 2023-07-09 01:03:53 - INFO - Extracting keywords...
 2023-07-09 01:03:54 - INFO - >> Submitted reply to post with id: 14uhp10
+2023-07-09 03:03:56 - INFO - >>> Initializing Sumarization Bot
+2023-07-09 03:03:58 - INFO - No new posts to process in /r/portugal.
+2023-07-09 03:03:59 - INFO - No new posts to process in /r/portugueses.
+2023-07-09 03:04:00 - INFO - No new posts to process in /r/lisboa.
+2023-07-09 03:04:01 - INFO - No new posts to process in /r/portugalnews.
