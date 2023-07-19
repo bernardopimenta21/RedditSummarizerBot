@@ -2007,3 +2007,12 @@
 2023-07-18 22:10:04 - INFO - No new posts to process in /r/portugueses.
 2023-07-18 22:10:05 - INFO - No new posts to process in /r/lisboa.
 2023-07-18 22:10:06 - INFO - No new posts to process in /r/portugalnews.
+2023-07-19 01:31:26 - INFO - >>> Initializing Sumarization Bot
+2023-07-19 01:31:28 - INFO - No new posts to process in /r/portugal.
+2023-07-19 01:31:29 - INFO - >> Start summarizer for post with id: 153f7kd
+2023-07-19 01:31:29 - INFO - Getting article text from URL
+2023-07-19 01:31:30 - INFO - Generating summary...
+2023-07-19 01:31:31 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-07-19 01:31:35 - INFO - Use pytorch device: cpu
+2023-07-19 01:31:36 - INFO - Extracting keywords...
+2023-07-19 01:31:36 - INFO - >> Submitted reply to post with id: 153f7kd
