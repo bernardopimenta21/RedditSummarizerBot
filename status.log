@@ -2498,3 +2498,18 @@
 2023-07-26 10:11:15 - INFO - No new posts to process in /r/portugueses.
 2023-07-26 10:11:16 - INFO - No new posts to process in /r/lisboa.
 2023-07-26 10:11:17 - INFO - No new posts to process in /r/portugalnews.
+2023-07-26 12:18:02 - INFO - >>> Initializing Sumarization Bot
+2023-07-26 12:18:05 - INFO - >> Start summarizer for post with id: 15a2yjf
+2023-07-26 12:18:05 - INFO - Getting article text from URL
+2023-07-26 12:18:10 - INFO - Generating summary...
+2023-07-26 12:18:10 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-07-26 12:18:15 - INFO - Use pytorch device: cpu
+2023-07-26 12:18:16 - INFO - Extracting keywords...
+2023-07-26 12:18:17 - INFO - >> Submitted reply to post with id: 15a2yjf
+2023-07-26 12:18:17 - INFO - >> Start summarizer for post with id: 159m1do
+2023-07-26 12:18:17 - INFO - Getting article text from URL
+2023-07-26 12:18:18 - INFO - Generating summary...
+2023-07-26 12:18:18 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-07-26 12:18:19 - INFO - Use pytorch device: cpu
+2023-07-26 12:18:19 - INFO - Extracting keywords...
+2023-07-26 12:18:19 - INFO - >> Submitted reply to post with id: 159m1do
