@@ -4378,3 +4378,14 @@
 2023-08-20 18:11:59 - INFO - Use pytorch device: cpu
 2023-08-20 18:12:00 - INFO - Extracting keywords...
 2023-08-20 18:12:01 - INFO - >> Submitted reply to post with id: 15wgtv1
+2023-08-20 20:10:33 - INFO - >>> Initializing Sumarization Bot
+2023-08-20 20:10:35 - INFO - No new posts to process in /r/portugal.
+2023-08-20 20:10:36 - INFO - No new posts to process in /r/portugueses.
+2023-08-20 20:10:37 - INFO - No new posts to process in /r/lisboa.
+2023-08-20 20:10:38 - INFO - >> Start summarizer for post with id: 15wii53
+2023-08-20 20:10:38 - INFO - Getting article text from URL
+2023-08-20 20:10:47 - INFO - Generating summary...
+2023-08-20 20:10:47 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-08-20 20:10:52 - INFO - Use pytorch device: cpu
+2023-08-20 20:10:52 - INFO - Extracting keywords...
+2023-08-20 20:10:53 - INFO - >> Submitted reply to post with id: 15wii53
