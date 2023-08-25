@@ -4841,3 +4841,11 @@
 2023-08-25 16:13:10 - INFO - Generating summary...
 2023-08-25 16:13:10 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
 2023-08-25 16:13:11 - INFO - Use pytorch device: cpu
+2023-08-25 18:12:51 - INFO - >>> Initializing Sumarization Bot
+2023-08-25 18:12:53 - INFO - >> Start summarizer for post with id: 16169lr
+2023-08-25 18:12:53 - INFO - Getting article text from URL
+2023-08-25 18:12:54 - INFO - Generating summary...
+2023-08-25 18:12:54 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-08-25 18:13:00 - INFO - Use pytorch device: cpu
+2023-08-25 18:13:01 - INFO - Extracting keywords...
+2023-08-25 18:13:01 - INFO - >> Submitted reply to post with id: 16169lr
