@@ -4804,3 +4804,24 @@
 2023-08-25 10:11:47 - INFO - Generating summary...
 2023-08-25 10:11:47 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
 2023-08-25 10:11:48 - INFO - Use pytorch device: cpu
+2023-08-25 12:17:24 - INFO - >>> Initializing Sumarization Bot
+2023-08-25 12:17:27 - INFO - No new posts to process in /r/portugal.
+2023-08-25 12:17:28 - INFO - >> Start summarizer for post with id: 160x9lg
+2023-08-25 12:17:28 - INFO - Getting article text from URL
+2023-08-25 12:17:30 - INFO - Generating summary...
+2023-08-25 12:17:30 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-08-25 12:17:32 - INFO - Use pytorch device: cpu
+2023-08-25 12:17:33 - INFO - Extracting keywords...
+2023-08-25 12:17:33 - INFO - >> Submitted reply to post with id: 160x9lg
+2023-08-25 12:17:33 - INFO - >> Start summarizer for post with id: 160w08d
+2023-08-25 12:17:33 - INFO - Getting article text from URL
+2023-08-25 12:17:35 - INFO - Generating summary...
+2023-08-25 12:17:35 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-08-25 12:17:35 - INFO - Use pytorch device: cpu
+2023-08-25 12:17:37 - INFO - Extracting keywords...
+2023-08-25 12:17:37 - INFO - >> Submitted reply to post with id: 160w08d
+2023-08-25 12:17:37 - INFO - >> Start summarizer for post with id: 160vyn9
+2023-08-25 12:17:37 - INFO - Getting article text from URL
+2023-08-25 12:17:39 - INFO - Generating summary...
+2023-08-25 12:17:39 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-08-25 12:17:39 - INFO - Use pytorch device: cpu
