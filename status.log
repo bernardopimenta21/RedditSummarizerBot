@@ -6052,3 +6052,32 @@
 2023-09-09 22:09:33 - INFO - No new posts to process in /r/portugueses.
 2023-09-09 22:09:34 - INFO - No new posts to process in /r/lisboa.
 2023-09-09 22:09:34 - INFO - No new posts to process in /r/portugalnews.
+2023-09-10 00:43:13 - INFO - >>> Initializing Sumarization Bot
+2023-09-10 00:43:15 - INFO - >> Start summarizer for post with id: 16elwk2
+2023-09-10 00:43:15 - INFO - Getting article text from URL
+2023-09-10 00:43:16 - INFO - Generating summary...
+2023-09-10 00:43:17 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-09-10 00:43:23 - INFO - Use pytorch device: cpu
+2023-09-10 00:43:24 - INFO - Extracting keywords...
+2023-09-10 00:43:24 - INFO - >> Submitted reply to post with id: 16elwk2
+2023-09-10 00:43:24 - INFO - >> Start summarizer for post with id: 16ekor5
+2023-09-10 00:43:24 - INFO - Getting article text from URL
+2023-09-10 00:43:29 - INFO - Generating summary...
+2023-09-10 00:43:29 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-09-10 00:43:30 - INFO - Use pytorch device: cpu
+2023-09-10 00:43:32 - INFO - Extracting keywords...
+2023-09-10 00:43:32 - INFO - >> Submitted reply to post with id: 16ekor5
+2023-09-10 00:43:34 - INFO - >> Start summarizer for post with id: 16elxjv
+2023-09-10 00:43:34 - INFO - Getting article text from URL
+2023-09-10 00:43:35 - INFO - Generating summary...
+2023-09-10 00:43:35 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-09-10 00:43:36 - INFO - Use pytorch device: cpu
+2023-09-10 00:43:36 - INFO - Extracting keywords...
+2023-09-10 00:43:36 - INFO - >> Submitted reply to post with id: 16elxjv
+2023-09-10 00:43:36 - INFO - >> Start summarizer for post with id: 16elg99
+2023-09-10 00:43:36 - INFO - Getting article text from URL
+2023-09-10 00:43:37 - INFO - Generating summary...
+2023-09-10 00:43:38 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-09-10 00:43:38 - INFO - Use pytorch device: cpu
+2023-09-10 00:43:40 - INFO - Extracting keywords...
+2023-09-10 00:43:40 - INFO - >> Submitted reply to post with id: 16elg99
