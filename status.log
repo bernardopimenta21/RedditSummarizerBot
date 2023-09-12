@@ -6340,3 +6340,18 @@
 2023-09-12 18:13:12 - INFO - Use pytorch device: cpu
 2023-09-12 18:13:13 - INFO - Extracting keywords...
 2023-09-12 18:13:13 - INFO - >> Submitted reply to post with id: 16gy7h6
+2023-09-12 20:11:33 - INFO - >>> Initializing Sumarization Bot
+2023-09-12 20:11:36 - INFO - >> Start summarizer for post with id: 16gz0vn
+2023-09-12 20:11:36 - INFO - Getting article text from URL
+2023-09-12 20:11:41 - INFO - Generating summary...
+2023-09-12 20:11:41 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-09-12 20:11:48 - INFO - Use pytorch device: cpu
+2023-09-12 20:11:49 - INFO - Extracting keywords...
+2023-09-12 20:11:50 - INFO - >> Submitted reply to post with id: 16gz0vn
+2023-09-12 20:11:52 - INFO - >> Start summarizer for post with id: 16gzp0b
+2023-09-12 20:11:52 - INFO - Getting article text from URL
+2023-09-12 20:11:53 - INFO - Generating summary...
+2023-09-12 20:11:53 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-09-12 20:11:54 - INFO - Use pytorch device: cpu
+2023-09-12 20:11:55 - INFO - Extracting keywords...
+2023-09-12 20:11:55 - INFO - >> Submitted reply to post with id: 16gzp0b
