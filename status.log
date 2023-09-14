@@ -6430,3 +6430,11 @@
 2023-09-13 22:10:23 - INFO - No new posts to process in /r/portugueses.
 2023-09-13 22:10:24 - INFO - No new posts to process in /r/lisboa.
 2023-09-13 22:10:25 - INFO - No new posts to process in /r/portugalnews.
+2023-09-14 00:41:20 - INFO - >>> Initializing Sumarization Bot
+2023-09-14 00:41:23 - INFO - >> Start summarizer for post with id: 16i1vs0
+2023-09-14 00:41:23 - INFO - Getting article text from URL
+2023-09-14 00:41:24 - INFO - Generating summary...
+2023-09-14 00:41:25 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-09-14 00:41:30 - INFO - Use pytorch device: cpu
+2023-09-14 00:41:32 - INFO - Extracting keywords...
+2023-09-14 00:41:32 - INFO - >> Submitted reply to post with id: 16i1vs0
