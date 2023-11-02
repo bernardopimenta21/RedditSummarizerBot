@@ -10693,3 +10693,19 @@
 2023-11-02 10:12:33 - INFO - Use pytorch device: cpu
 2023-11-02 10:12:37 - INFO - Extracting keywords...
 2023-11-02 10:12:37 - INFO - >> Submitted reply to post with id: 17lzxdp
+2023-11-02 12:18:39 - INFO - >>> Initializing Sumarization Bot
+2023-11-02 12:18:42 - INFO - No new posts to process in /r/portugal.
+2023-11-02 12:18:43 - INFO - >> Start summarizer for post with id: 17m0wzr
+2023-11-02 12:18:43 - INFO - Getting article text from URL
+2023-11-02 12:18:47 - INFO - Generating summary...
+2023-11-02 12:18:53 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-11-02 12:18:59 - INFO - Use pytorch device: cpu
+2023-11-02 12:19:04 - INFO - Extracting keywords...
+2023-11-02 12:19:05 - INFO - >> Submitted reply to post with id: 17m0wzr
+2023-11-02 12:19:06 - INFO - >> Start summarizer for post with id: 17m06x3
+2023-11-02 12:19:06 - INFO - Getting article text from URL
+2023-11-02 12:19:08 - INFO - Generating summary...
+2023-11-02 12:19:14 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-11-02 12:19:14 - INFO - Use pytorch device: cpu
+2023-11-02 12:19:19 - INFO - Extracting keywords...
+2023-11-02 12:19:19 - INFO - >> Submitted reply to post with id: 17m06x3
