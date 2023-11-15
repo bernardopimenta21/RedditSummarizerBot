@@ -12059,3 +12059,32 @@
 2023-11-15 20:11:25 - INFO - Use pytorch device: cpu
 2023-11-15 20:11:26 - INFO - Extracting keywords...
 2023-11-15 20:11:26 - INFO - >> Submitted reply to post with id: 17w1vlz
+2023-11-15 22:10:08 - INFO - >>> Initializing Sumarization Bot
+2023-11-15 22:10:10 - INFO - >> Start summarizer for post with id: 17w45ui
+2023-11-15 22:10:10 - INFO - Getting article text from URL
+2023-11-15 22:10:12 - INFO - Generating summary...
+2023-11-15 22:10:12 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-11-15 22:10:15 - INFO - Use pytorch device: cpu
+2023-11-15 22:10:17 - INFO - Extracting keywords...
+2023-11-15 22:10:18 - INFO - >> Submitted reply to post with id: 17w45ui
+2023-11-15 22:10:19 - INFO - >> Start summarizer for post with id: 17w464w
+2023-11-15 22:10:19 - INFO - Getting article text from URL
+2023-11-15 22:10:20 - INFO - Generating summary...
+2023-11-15 22:10:20 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-11-15 22:10:20 - INFO - Use pytorch device: cpu
+2023-11-15 22:10:23 - INFO - Extracting keywords...
+2023-11-15 22:10:23 - INFO - >> Submitted reply to post with id: 17w464w
+2023-11-15 22:10:24 - INFO - >> Start summarizer for post with id: 17w4u6b
+2023-11-15 22:10:24 - INFO - Getting article text from URL
+2023-11-15 22:10:25 - INFO - Generating summary...
+2023-11-15 22:10:25 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-11-15 22:10:26 - INFO - Use pytorch device: cpu
+2023-11-15 22:10:28 - INFO - Extracting keywords...
+2023-11-15 22:10:28 - INFO - >> Submitted reply to post with id: 17w4u6b
+2023-11-15 22:10:28 - INFO - >> Start summarizer for post with id: 17w2iok
+2023-11-15 22:10:28 - INFO - Getting article text from URL
+2023-11-15 22:10:29 - INFO - Generating summary...
+2023-11-15 22:10:29 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-11-15 22:10:30 - INFO - Use pytorch device: cpu
+2023-11-15 22:10:31 - INFO - Extracting keywords...
+2023-11-15 22:10:31 - INFO - >> Submitted reply to post with id: 17w2iok
