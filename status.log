@@ -12590,3 +12590,15 @@
 2023-11-22 00:45:13 - INFO - Use pytorch device: cpu
 2023-11-22 00:45:14 - INFO - Extracting keywords...
 2023-11-22 00:45:14 - INFO - >> Submitted reply to post with id: 180t2bf
+2023-11-22 02:26:58 - INFO - >>> Initializing Sumarization Bot
+2023-11-22 02:27:00 - INFO - >> Start summarizer for post with id: 180wkdc
+2023-11-22 02:27:00 - INFO - Getting article text from URL
+2023-11-22 02:27:01 - INFO - Generating summary...
+2023-11-22 02:27:01 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-11-22 02:27:04 - INFO - Use pytorch device: cpu
+2023-11-22 02:27:07 - WARNING - Retrying due to 500 status: GET https://oauth.reddit.com/r/lisboa/new
+2023-11-22 02:27:09 - INFO - >> Start summarizer for post with id: 180wrsc
+2023-11-22 02:27:09 - INFO - Getting article text from URL
+2023-11-22 02:27:10 - INFO - Generating summary...
+2023-11-22 02:27:10 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-11-22 02:27:10 - INFO - Use pytorch device: cpu
