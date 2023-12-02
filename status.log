@@ -13470,3 +13470,32 @@
 2023-12-02 10:10:00 - INFO - No new posts to process in /r/portugueses.
 2023-12-02 10:10:01 - INFO - No new posts to process in /r/lisboa.
 2023-12-02 10:10:02 - INFO - No new posts to process in /r/portugalnews.
+2023-12-02 12:16:21 - INFO - >>> Initializing Sumarization Bot
+2023-12-02 12:16:23 - INFO - >> Start summarizer for post with id: 1890s4t
+2023-12-02 12:16:23 - INFO - Getting article text from URL
+2023-12-02 12:16:24 - INFO - Generating summary...
+2023-12-02 12:16:30 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-12-02 12:16:33 - INFO - Use pytorch device: cpu
+2023-12-02 12:16:38 - INFO - Extracting keywords...
+2023-12-02 12:16:38 - INFO - >> Submitted reply to post with id: 1890s4t
+2023-12-02 12:16:39 - INFO - >> Start summarizer for post with id: 1891f79
+2023-12-02 12:16:39 - INFO - Getting article text from URL
+2023-12-02 12:16:40 - INFO - Generating summary...
+2023-12-02 12:16:47 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-12-02 12:16:47 - INFO - Use pytorch device: cpu
+2023-12-02 12:16:52 - INFO - Extracting keywords...
+2023-12-02 12:16:52 - INFO - >> Submitted reply to post with id: 1891f79
+2023-12-02 12:16:52 - INFO - >> Start summarizer for post with id: 1891dwm
+2023-12-02 12:16:52 - INFO - Getting article text from URL
+2023-12-02 12:16:54 - INFO - Generating summary...
+2023-12-02 12:16:54 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-12-02 12:16:54 - INFO - Use pytorch device: cpu
+2023-12-02 12:16:55 - INFO - Extracting keywords...
+2023-12-02 12:16:55 - INFO - >> Submitted reply to post with id: 1891dwm
+2023-12-02 12:16:56 - INFO - >> Start summarizer for post with id: 1890si2
+2023-12-02 12:16:56 - INFO - Getting article text from URL
+2023-12-02 12:16:57 - INFO - Generating summary...
+2023-12-02 12:17:03 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
+2023-12-02 12:17:03 - INFO - Use pytorch device: cpu
+2023-12-02 12:17:08 - INFO - Extracting keywords...
+2023-12-02 12:17:09 - INFO - >> Submitted reply to post with id: 1890si2
