@@ -14491,3 +14491,8 @@
 2023-12-13 12:18:37 - INFO - Generating summary...
 2023-12-13 12:18:37 - INFO - Load pretrained SentenceTransformer: distilbert-base-nli-stsb-mean-tokens
 2023-12-13 12:18:37 - INFO - Use pytorch device: cpu
+2023-12-13 14:10:48 - INFO - >>> Initializing Sumarization Bot
+2023-12-13 14:10:50 - INFO - No new posts to process in /r/portugal.
+2023-12-13 14:10:51 - INFO - No new posts to process in /r/portugueses.
+2023-12-13 14:10:52 - INFO - No new posts to process in /r/lisboa.
+2023-12-13 14:10:52 - INFO - No new posts to process in /r/portugalnews.
